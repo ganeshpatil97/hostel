@@ -1,0 +1,36 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo "Entered in prebuild phase";
+  build:
+    commands:
+      - echo "Entered in build phase"
+  post_build:
+    commands:
+      - echo "Enteredin post-build phase"
+artifacts:
+  files:
+    - about_manager.php
+    - about.php
+    - allocate_room.php
+    - allocated_rooms.php
+    - application_form.php
+    - contact_manager.php
+    - contact.php
+	- empty_rooms.php
+	- error.php
+	- home_manager.php
+	- home.php
+	- index.php
+	- login-hostel_manager.php
+	- message_hostel_manager.php
+	- message_user.php
+	- phpinfo.php
+	- profile.php
+	- projects.php
+	- services.php
+	- signup.php
+	- single.php
+	- test.php
+	- vacate_rooms.php

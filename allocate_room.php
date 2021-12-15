@@ -258,11 +258,11 @@ if(isset($_POST['submit'])){
      		}
      	}
      	else{
-     		echo "<script type='text/javascript'>alert('Failed to allocate Rooms')</script>";
+     		echo "<script type='text/javascript'>alert('Failed to allocate Rooms result4')</script>";
      	}
      }
      else{
-     	echo "<script type='text/javascript'>alert('Failed to allocate Rooms')</script>";
+     	echo "<script type='text/javascript'>alert('Failed to allocate Rooms result3')</script>";
      }
 
    }

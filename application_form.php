@@ -125,7 +125,7 @@
 <footer class="py-5">
 	<div class="container py-md-5">
 		<div class="footer-logo mb-5 text-center">
-			<a class="navbar-brand" href="http://nci.ac.in" target="_blank">NCI <span class="display"> DUBLIN</span></a>
+			<a class="navbar-brand" href="http://ncirl.ie" target="_blank">NCI <span class="display"> DUBLIN</span></a>
 		</div>
 		<div class="footer-grid">
 			

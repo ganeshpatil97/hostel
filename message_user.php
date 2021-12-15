@@ -57,7 +57,7 @@
 		<div class="container agile-banner_nav">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				
-				<h1><a class="navbar-brand" href="home.php">NITC <span class="display"></span></a></h1>
+				<h1><a class="navbar-brand" href="home.php">NCI <span class="display"></span></a></h1>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
@@ -111,18 +111,20 @@
        $result6 = mysqli_query($conn,$query6);
        $row6 = mysqli_fetch_assoc($result6);
        $hostel_name = $row6['Hostel_name'];
-          ?> 
+          ?>
+		  
+		  <b style="text-color: red"><?php echo $row['subject_h']; ?></b>
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="card">
       <div class="card-header"><b><?php echo $row['subject_h']; ?></b></div>
       <div class="card-body"><?php echo $row['message']; ?></div> 
-      <div class="card-footer"><?php echo $hostel_name." Hostel Manager"; ?><span style="float: right"><?php echo $row['msg_date']." ".$row['msg_time']; ?></span></div>
-  </div>
-</div>
+      <div class="card-footer"><?php echo $hostel_name.""; ?><span style="float: right"><?php echo $row['msg_date']." ".$row['msg_time']; ?></span></div>
+  </div> -->
+<!-- </div> -->
 <br><br>
              
-    <?php
+<?php
     } 
 
 ?>
@@ -134,7 +136,7 @@
 <footer class="py-5">
 	<div class="container py-md-5">
 		<div class="footer-logo mb-5 text-center">
-			<a class="navbar-brand" href="http://www.nitc.ac.in/" target="_blank">NIT <span class="display"> CALICUT</span></a>
+			<a class="navbar-brand" href="https://www.hubbleliving.com/locations/student-accommodation-dublin" target="_blank">NCI <span class="display"> DUBLIN</span></a>
 		</div>
 		<div class="footer-grid">
 			

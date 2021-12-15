@@ -134,7 +134,7 @@
       <div class="card">
       <div class="card-header"><b><?php echo $row['subject_h']; ?></b></div>
       <div class="card-body"><?php echo $row['message']; ?></div> 
-      <div class="card-footer"><?php echo $row['sender_id'] ?><span style="float: right"><?php echo $row['msg_date']." ".$row['msg_time']; ?></span></div>
+      <div class="card-footer"><?php echo $row['sender_id'] ?></div>
   </div>
 </div>
 <br><br>

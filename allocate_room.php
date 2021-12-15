@@ -248,6 +248,7 @@ if(isset($_POST['submit'])){
      /*echo "<script type='text/javascript'>alert('<?php echo $result3; ?>')</script>";*/
      if($result3){
      	$room_id = $row2['Room_id'];
+		 echo "<script type='text/javascript'>alert('<?php echo $room_id; ?>')</script>";
      	$query4 = "UPDATE Student SET Hostel_id = '$hostel_id',Room_id = '$room_id' WHERE Student_id = '$student_id'";
      	$result4 = mysqli_query($conn,$query4);
      	if($result4){

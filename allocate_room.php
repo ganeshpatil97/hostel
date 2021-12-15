@@ -48,7 +48,7 @@
 		<div class="container agile-banner_nav">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				
-				<h1><a class="navbar-brand" href="home_manager.php">NCI<span class="display"></span></a></h1>
+				<h1><a class="navbar-brand" href="home_manager.php">NCI <span class="display"></span></a></h1>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
@@ -59,7 +59,11 @@
 							<a class="nav-link" href="home_manager.php">Home <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-						<a class="nav-link" href="allocate_room.php">Allocate Room</a>
+						<a class="nav-link" href="allocate_room.php">Allocate Rooms</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="message_hostel_manager.php">Messages Received</a>
+					</li>
 					<li class="dropdown nav-item">
 						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Rooms
 							<b class="caret"></b>
@@ -68,9 +72,6 @@
 							<li>
 								<a href="allocated_rooms.php">Allocated Rooms</a>
 							</li>
-							<li class="nav-item">
-						<a class="nav-link" href="message_hostel_manager.php">Messages Received</a>
-					</li>
 							<li>
 								<a href="empty_rooms.php">Empty Rooms</a>
 							</li>
@@ -248,7 +249,7 @@ if(isset($_POST['submit'])){
      /*echo "<script type='text/javascript'>alert('<?php echo $result3; ?>')</script>";*/
      if($result3){
      	$room_id = $row2['Room_id'];
-		 echo "<script type='text/javascript'>alert('<?php echo $room_id; ?>')</script>";
+		
      	$query4 = "UPDATE Student SET Hostel_id = '$hostel_id',Room_id = '$room_id' WHERE Student_id = '$student_id'";
      	$result4 = mysqli_query($conn,$query4);
      	if($result4){
@@ -259,11 +260,11 @@ if(isset($_POST['submit'])){
      		}
      	}
      	else{
-     		echo "<script type='text/javascript'>alert('Failed to allocate Rooms result4')</script>";
+     		echo "<script type='text/javascript'>alert('Failed to allocate Rooms')</script>";
      	}
      }
      else{
-     	echo "<script type='text/javascript'>alert('Failed to allocate Rooms result3')</script>";
+     	echo "<script type='text/javascript'>alert('Failed to allocate Rooms')</script>";
      }
 
    }

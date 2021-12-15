@@ -1,5 +1,11 @@
 <?php
 
+require './varify_captcha.php';
+
+  
+
+
+
 if (isset($_POST['login-submit'])) {
 
   require 'config.inc.php';

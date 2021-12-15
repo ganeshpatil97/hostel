@@ -48,7 +48,10 @@
                 <a href="#">Forgot Password?</a>
                 <p><input type="checkbox">Remember Me</p>
             </div>-->
-            <button type="submit" name="login-submit">Login</button>
+            <script src='https://www.google.com/recaptcha/api.js' async defer ></script>
+            <form id="frmContact" action="varify_captcha.php" method="POST" novalidate="novalidate">
+            <div class="g-recaptcha" data-sitekey="6LchGaYdAAAAALTJtB8DSW-pKNgUOmt-AnqgZG7_"></div>
+        <button type="submit" name="login-submit">Login</button></form>
         </form>
           <p class=" w3l-register-p">Login as<a href="login-hostel_manager.php" class="register"> Hostel-Manager/Admin</a></p>
         <p class=" w3l-register-p">Don't have an account?<a href="signup.php" class="register"> Sign up</a></p>

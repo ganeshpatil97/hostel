@@ -19,7 +19,7 @@
 //Set smtp encryption type (ssl/tls)
 	$mail->SMTPSecure = "tls";
 //Port to connect smtp
-	$mail->Port = "587";
+	$mail->Port = "465";
 //Set gmail username
 	$mail->Username = "test.nileshwari@gmail.com";
 //Set gmail password

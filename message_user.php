@@ -120,8 +120,8 @@
       <div class="card-header"><b><?php echo $row['subject_h']; ?></b></div>
       <div class="card-body"><?php echo $row['message']; ?></div> 
       <div class="card-footer"><?php echo $hostel_name.""; ?><span style="float: right"><?php echo $row['msg_date']." ".$row['msg_time']; ?></span></div>
-  </div> -->
-<!-- </div>
+  </div>
+</div>
 <br><br>
              
 <?php

@@ -25,7 +25,7 @@
 
 
 <body>
-    <h1>Hostel Room Allocation System</h1>
+    <h1>Hostel Management System</h1>
     <div class=" w3l-login-form">
         <h2>Sign Up Here</h2>
         <form action="includes/signup.inc.php" method="POST">

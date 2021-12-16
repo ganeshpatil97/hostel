@@ -6,7 +6,7 @@
         $secret = '6LchGaYdAAAAAIqmKraJaxl-o9J2aRi9kfV2rbmm';
         $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
         $responseData = json_decode($verifyResponse);
-        echo $responseData;
+        
         if($responseData->success)
 	        $message = "g-recaptcha varified successfully";
         else
